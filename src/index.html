@@ -11,13 +11,37 @@
       href="./images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="../build/styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
 
     <title>Frontend Mentor | QR code component</title>
   </head>
 
   <body>
-    <div class="flex min-h-screen items-center justify-center bg-black">
-      <div class="h-20 w-20 bg-yellow-400"></div>
+    <div class="flex min-h-screen items-center justify-center bg-lightgray">
+      <div class="flex flex-col h-[500px] w-[300px] bg-white rounded-2xl p-4">
+        <!-- Image -->
+        <div id="img" class="flex">
+          <img class="rounded-2xl" src="../images/image-qr-code.png" alt="qr-image" width="300" height="300">
+        </div>
+        <!-- Image body -->
+        <div id="img_body" class="flex flex-col justify-evenly h-full">
+          <div id="title" class="flex justify-center">
+            <p class="text-center text-[20px] font-extrabold">
+              Improve your front-end<br/>
+              skills by building projects
+            </p>
+          </div>
+          <div id="subtitle" class="flex justify-center">
+            <p class="text-center text-gray-400 text-base">
+              Scan the QR code to visit Frontend <br/>
+              Mentor and take your coding skills to <br/>
+              the next level
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
